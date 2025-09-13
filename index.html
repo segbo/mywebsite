@@ -5,17 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Nkemakolam Egbo — Portfolio</title>
   <meta name="description" content="Portfolio of Nkemakolam Egbo, Cybersecurity Analyst." />
-  <link rel="stylesheet" href="style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <!-- cache-bust the CSS to defeat old cached copies -->
+  <link rel="stylesheet" href="style.css?v=2" />
 </head>
 <body>
-  <!-- Header / Nav -->
   <header class="site-header">
     <nav class="nav container">
       <a class="brand" href="index.html">NE</a>
-      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu">☰</button>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle navigation">☰</button>
       <ul id="nav-menu" class="nav-menu">
         <li><a href="index.html" class="active">Home</a></li>
         <li><a href="about.html">About Me</a></li>
@@ -27,7 +27,6 @@
     </nav>
   </header>
 
-  <!-- Hero / Welcome -->
   <section class="hero">
     <div class="container hero-inner">
       <div class="hero-text">
@@ -56,7 +55,6 @@
     </div>
   </section>
 
-  <!-- Highlights -->
   <section class="highlights container">
     <article class="card">
       <h3>Recent Project</h3>
@@ -77,7 +75,6 @@
     </article>
   </section>
 
-  <!-- Footer -->
   <footer class="site-footer">
     <div class="container footer-inner">
       <p>© <span id="year"></span> Nkemakolam Egbo. All rights reserved.</p>
@@ -89,12 +86,13 @@
     // Mobile nav toggle
     const toggle = document.querySelector('.nav-toggle');
     const menu = document.getElementById('nav-menu');
-    toggle?.addEventListener('click', () => {
-      const open = toggle.getAttribute('aria-expanded') === 'true';
-      toggle.setAttribute('aria-expanded', String(!open));
-      menu.classList.toggle('open');
-    });
-
+    if (toggle && menu) {
+      toggle.addEventListener('click', () => {
+        const open = toggle.getAttribute('aria-expanded') === 'true';
+        toggle.setAttribute('aria-expanded', String(!open));
+        menu.classList.toggle('open');
+      });
+    }
     // Year
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
