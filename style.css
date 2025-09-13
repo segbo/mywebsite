@@ -98,3 +98,51 @@ ul{ margin:0; padding-left:1.1rem; } /* normal lists inside content */
   .nav-menu.open{ display:flex; }
   .highlights{ grid-template-columns:1fr; }
 }
+/* === Polish: type, spacing, contrast, interactions === */
+
+/* 1) Improve link contrast on blue + clearer hover */
+a { color: #fde68a; text-decoration: underline; text-decoration-thickness: 2px; }
+a:hover { text-decoration-color: #fff; }
+
+/* 2) Hero readability + balance */
+.hero { padding: 84px 0 74px; }
+.hero-text { max-width: 760px; backdrop-filter: saturate(120%) blur(2px); }
+.hero-text h1 { letter-spacing: -0.5px; margin-bottom: 16px; }
+.hero-text p { color: #eef2ff; }
+
+/* 3) Buttons: bigger hit area + focus styles */
+.btn { padding: 12px 18px; border-radius: 14px; }
+.btn:focus-visible { outline: 3px solid #fde68a; outline-offset: 3px; }
+.btn-outline { border-width: 2px; }
+
+/* 4) Snapshot pills: tighter, more “badge-like” */
+.stats { gap: 10px; }
+.stats li {
+  display: flex; align-items: center; gap: 10px;
+  background: #f8fafc; border: 1px solid #e5e7eb;
+  border-radius: 14px; padding: 12px 14px;
+}
+.stats span { 
+  min-width: 84px; text-transform: uppercase; letter-spacing: .4px; 
+  color: #1e3a8a; background:#e0e7ff; border-radius: 999px; 
+  padding: 6px 10px; font-size: .82rem;
+}
+
+/* 5) Cards: reduce shadow + unify radius */
+.card { border-radius: 14px; box-shadow: 0 8px 18px rgba(0,0,0,.10); }
+
+/* 6) Header: make active tab clearer */
+.nav-menu a.active { background: rgba(255,255,255,.22); }
+.nav-menu a:focus-visible { outline: 3px solid #fde68a; outline-offset: 3px; }
+
+/* 7) Footer spacing on small screens */
+.site-footer { padding: 32px 0; }
+.footer-inner { gap: 12px; flex-wrap: wrap; }
+
+/* 8) Mobile polish */
+@media (max-width: 720px){
+  .hero { padding: 64px 0; }
+  .hero-text { padding: 28px 22px; }
+  .hero-actions { flex-wrap: wrap; }
+  .stats span { min-width: 72px; }
+}
