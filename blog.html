@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Blog — Nkemakolam Egbo</title>
+  <link rel="stylesheet" href="style.css?v=3">
+</head>
+<body>
+  <header class="g-header">
+    <nav class="g-nav container">
+      <a class="g-brand" href="index.html">NE</a>
+      <ul class="g-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a class="active" href="blog.html">Blog</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="container g-section">
+    <div class="g-section-head"><h2>Blog Articles</h2></div>
+    <div class="g-grid">
+      <article class="g-card">
+        <h3><a href="#">Zabbix Network & Server Monitoring — Notes</a></h3>
+        <p>Quick install steps and gotchas from a recent lab.</p>
+        <div class="g-meta">Monitoring · Notes</div>
+      </article>
+      <article class="g-card">
+        <h3><a href="#">Using Docker in CI/CD — A Practical Flow</a></h3>
+        <p>Images, tags, and rollbacks without the headaches.</p>
+        <div class="g-meta">DevOps · Guide</div>
+      </article>
+      <article class="g-card">
+        <h3><a href="#">Vulnerability Scanning to Actionable Fixes</a></h3>
+        <p>From detection to remediation with clear ownership.</p>
+        <div class="g-meta">Security · How-to</div>
+      </article>
+    </div>
+  </section>
+
+  <footer class="g-footer">
+    <div class="container g-foot-inner">
+      <p>© <span id="year"></span> Nkemakolam Egbo</p>
+    </div>
+  </footer>
+  <script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+</body>
+</html>
