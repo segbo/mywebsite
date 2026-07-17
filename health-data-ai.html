@@ -1,1 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
 
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Health Data and AI Data Analyst portfolio of Nkemakolam Egbo."
+    >
+
+    <title>Health Data & AI Portfolio | Nkemakolam Egbo</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <nav class="navbar container" aria-label="Main navigation">
+            <a class="logo" href="index.html">NE</a>
+
+            <button
+                class="menu-button"
+                type="button"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+                aria-controls="main-menu"
+            >
+                ☰
+            </button>
+
+            <ul class="nav-links" id="main-menu">
+                <li><a href="index.html">Home</a></li>
+
+                <li>
+                    <a class="active" href="health-data-ai.html">
+                        Health Data & AI
+                    </a>
+                </li>
+
+                <li>
+                    <a href="cybersecurity-network.html">
+                        Cybersecurity
+                    </a>
+                </li>
+
+                <li>
+                    <a href="certifications.html">Certifications</a>
+                </li>
+
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <div class="container">
+                <p class="eyebrow">Portfolio Track One</p>
+
+                <h1>Health Data Analyst / AI Data Analyst</h1>
+
+                <p>
+                    Projects focused on healthcare analytics, SQL, Python,
+                    exploratory data analysis, visualization, machine
+                    learning, data quality, and evidence-based insights.
+                </p>
+
+                <div class="tag-list">
+                    <span>Python</span>
+                    <span>SQL</span>
+                    <span>Pandas</span>
+                    <span>Jupyter Notebook</span>
+                    <span>Excel</span>
+                    <span>Power BI</span>
+                    <span>Machine Learning</span>
+                    <span>Healthcare Analytics</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="eyebrow">Featured work</p>
+
+                    <h2>Data Analytics Projects</h2>
+
+                    <p>
+                        Replace the sample information below with the exact
+                        descriptions and repository links for your projects.
+                    </p>
+                </div>
+
+                <div class="project-grid">
+                    <article class="project-card">
+                        <h3>
+                            Chicago Crime, Census and School Data Analysis
+                        </h3>
+
+                        <p>
+                            An exploratory analysis using SQL and Python to
+                            examine relationships among crime, census,
+                            socioeconomic, and school datasets.
+                        </p>
+
+                        <div class="tag-list">
+                            <span>SQL</span>
+                            <span>Python</span>
+                            <span>Jupyter</span>
+                            <span>EDA</span>
+                        </div>
+
+                        <div class="project-links">
+                            <a
+                                href="https://github.com/segbo"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                View GitHub Repository →
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <h3>Healthcare Dataset Analysis</h3>
+
+                        <p>
+                            A healthcare analytics project involving data
+                            cleaning, exploratory analysis, visualization,
+                            and interpretation of patient or operational
+                            indicators.
+                        </p>
+
+                        <div class="tag-list">
+                            <span>Healthcare Data</span>
+                            <span>Pandas</span>
+                            <span>Visualization</span>
+                            <span>Statistics</span>
+                        </div>
+
+                        <div class="project-links">
+                            <a
+                                href="https://github.com/segbo"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                View GitHub Profile →
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <h3>AI Prediction Project</h3>
+
+                        <p>
+                            A machine-learning project demonstrating data
+                            preparation, model training, evaluation, and
+                            interpretation of prediction results.
+                        </p>
+
+                        <div class="tag-list">
+                            <span>Machine Learning</span>
+                            <span>Scikit-learn</span>
+                            <span>Python</span>
+                            <span>Model Evaluation</span>
+                        </div>
+
+                        <div class="project-links">
+                            <a
+                                href="https://github.com/segbo"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                View GitHub Profile →
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <h3>Interactive Data Dashboard</h3>
+
+                        <p>
+                            A dashboard project presenting important metrics,
+                            trends, filters, and business or healthcare
+                            insights for decision-makers.
+                        </p>
+
+                        <div class="tag-list">
+                            <span>Power BI</span>
+                            <span>Dashboard</span>
+                            <span>Data Storytelling</span>
+                            <span>KPIs</span>
+                        </div>
+
+                        <div class="project-links">
+                            <a href="contact.html">
+                                Request Project Details →
+                            </a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-content">
+            <p>
+                © <span id="current-year"></span> Nkemakolam Egbo.
+            </p>
+
+            <div class="footer-links">
+                <a
+                    href="https://github.com/segbo"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    GitHub
+                </a>
+
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const menuButton = document.querySelector(".menu-button");
+        const navigation = document.querySelector(".nav-links");
+        const currentYear = document.querySelector("#current-year");
+
+        currentYear.textContent = new Date().getFullYear();
+
+        menuButton.addEventListener("click", () => {
+            const isOpen = menuButton.getAttribute("aria-expanded") === "true";
+
+            menuButton.setAttribute("aria-expanded", String(!isOpen));
+            navigation.classList.toggle("open");
+        });
+    </script>
+</body>
+</html>
