@@ -1,1 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
 
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Cybersecurity and Network Security portfolio of Nkemakolam Egbo."
+    >
+
+    <title>Cybersecurity Portfolio | Nkemakolam Egbo</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <nav class="navbar container" aria-label="Main navigation">
+            <a class="logo" href="index.html">NE</a>
+
+            <button
+                class="menu-button"
+                type="button"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+                aria-controls="main-menu"
+            >
+                ☰
+            </button>
+
+            <ul class="nav-links" id="main-menu">
+                <li><a href="index.html">Home</a></li>
+
+                <li>
+                    <a href="health-data-ai.html">
+                        Health Data & AI
+                    </a>
+                </li>
+
+                <li>
+                    <a
+                        class="active"
+                        href="cybersecurity-network.html"
+                    >
+                        Cybersecurity
+                    </a>
+                </li>
+
+                <li>
+                    <a href="certifications.html">Certifications</a>
+                </li>
+
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <div class="container">
+                <p class="eyebrow">Portfolio Track Two</p>
+
+                <h1>Cybersecurity / Network Security</h1>
+
+                <p>
+                    Projects focused on securing systems and networks,
+                    analyzing security events, reducing vulnerabilities,
+                    improving monitoring, and responding to incidents.
+                </p>
+
+                <div class="tag-list">
+                    <span>Network Security</span>
+                    <span>Linux</span>
+                    <span>SIEM</span>
+                    <span>Incident Response</span>
+                    <span>Threat Detection</span>
+                    <span>Python</span>
+                    <span>Vulnerability Management</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="eyebrow">Featured work</p>
+
+                    <h2>Cybersecurity Projects</h2>
+
+                    <p>
+                        Replace the sample information below with your exact
+                        project descriptions and GitHub repository links.
+                    </p>
+                </div>
+
+                <div class="project-grid">
+                    <article class="project-card">
+                        <h3>Linux Host Hardening</h3>
+
+                        <p>
+                            A practical security project implementing user
+                            controls, secure configurations, firewall rules,
+                            logging, patching, and system-hardening measures.
+                        </p>
+
+                        <div class="tag-list">
+                            <span>Linux</span>
+                            <span>Hardening</span>
+                            <span>Firewall</span>
+                            <span>Access Control</span>
+                        </div>
+
+                        <div class="project-links">
+                            <a
+                                href="https://github.com/segbo"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                View GitHub Profile →
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <h3>Network Security Monitoring Lab</h3>
+
+                        <p>
+                            A lab environment for monitoring network traffic,
+                            identifying suspicious behavior, investigating
+                            events, and documenting security findings.
+                        </p>
+
+                        <div class="tag-list">
+                            <span>Network Monitoring</span>
+                            <span>Packet Analysis</span>
+                            <span>Detection</span>
+                            <span>Investigation</span>
+                        </div>
+
+                        <div class="project-links">
+                            <a
+                                href="https://github.com/segbo"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                View GitHub Profile →
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <h3>SIEM Alert Analysis and Tuning</h3>
+
+                        <p>
+                            A security operations project focused on log
+                            ingestion, alert investigation, detection rules,
+                            false-positive reduction, and incident
+                            documentation.
+                        </p>
+
+                        <div class="tag-list">
+                            <span>SIEM</span>
+                            <span>Log Analysis</span>
+                            <span>Alert Tuning</span>
+                            <span>SOC</span>
+                        </div>
+
+                        <div class="project-links">
+                            <a
+                                href="https://github.com/segbo"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                View GitHub Profile →
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <h3>Incident Response Runbook</h3>
+
+                        <p>
+                            A structured incident-response guide covering
+                            preparation, detection, containment, eradication,
+                            recovery, documentation, and lessons learned.
+                        </p>
+
+                        <div class="tag-list">
+                            <span>Incident Response</span>
+                            <span>Documentation</span>
+                            <span>Risk Management</span>
+                            <span>Recovery</span>
+                        </div>
+
+                        <div class="project-links">
+                            <a href="contact.html">
+                                Request Project Details →
+                            </a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-content">
+            <p>
+                © <span id="current-year"></span> Nkemakolam Egbo.
+            </p>
+
+            <div class="footer-links">
+                <a
+                    href="https://github.com/segbo"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    GitHub
+                </a>
+
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const menuButton = document.querySelector(".menu-button");
+        const navigation = document.querySelector(".nav-links");
+        const currentYear = document.querySelector("#current-year");
+
+        currentYear.textContent = new Date().getFullYear();
+
+        menuButton.addEventListener("click", () => {
+            const isOpen = menuButton.getAttribute("aria-expanded") === "true";
+
+            menuButton.setAttribute("aria-expanded", String(!isOpen));
+            navigation.classList.toggle("open");
+        });
+    </script>
+</body>
+</html>
