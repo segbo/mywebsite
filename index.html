@@ -1,128 +1,278 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Nkemakolam Egbo — SRE & Cybersecurity</title>
-  <meta name="description" content="Portfolio and blog of Nkemakolam Egbo — Site Reliability & Cybersecurity." />
+    <meta charset="UTF-8">
 
-  <!-- Social cards -->
-  <meta property="og:title" content="Nkemakolam Egbo — SRE & Cybersecurity">
-  <meta property="og:description" content="Projects, skills, and articles on reliability and security.">
-  <meta property="og:type" content="website">
-  <meta name="theme-color" content="#0f172a">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
 
-  <!-- Favicon -->
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 fill=%22%230f172a%22/><text x=%2250%22 y=%2270%22 font-size=%2280%22 text-anchor=%22middle%22 fill=%22white%22>NE</text></svg>">
+    <meta
+        name="description"
+        content="Portfolio of Nkemakolam Egbo, specializing in Health Data Analytics, AI Data Analytics, Cybersecurity, and Network Security."
+    >
 
-  <!-- Fonts + CSS -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=3">
+    <title>Nkemakolam Egbo | Professional Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <!-- Header -->
-  <header class="g-header">
-    <nav class="g-nav container">
-      <a class="g-brand" href="index.html">NE</a>
-      <button class="g-toggle" aria-expanded="false" aria-controls="g-menu">☰</button>
-      <ul id="g-menu" class="g-menu">
-        <li><a class="active" href="index.html">Home</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="skills.html">Skills</a></li>
-        <li><a href="blog.html">Blog</a></li><!-- optional local blog -->
-        <li><a href="certifications.html">Certifications</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+    <header class="site-header">
+        <nav class="navbar container" aria-label="Main navigation">
+            <a class="logo" href="index.html" aria-label="Homepage">
+                NE
+            </a>
 
-  <!-- Hero (Grace-style: simple left text, crisp tagline) -->
-  <section class="g-hero">
-    <div class="container">
-      <h1 class="g-title">Nkemakolam Egbo</h1>
-      <p class="g-tagline">Site Reliability Engineer with a passion for <strong>Cybersecurity</strong>.</p>
-      <p class="g-sub">
-        I design reliable systems, reduce toil, and turn risk into resilience. Explore my
-        <a href="projects.html">projects</a> and <a href="skills.html">skills</a>, or read the latest on my <a href="blog.html">blog</a>.
-      </p>
-      <div class="g-actions">
-        <a class="g-btn g-primary" href="projects.html">View Projects</a>
-        <a class="g-btn g-ghost" href="contact.html">Contact Me</a>
-      </div>
-    </div>
-  </section>
+            <button
+                class="menu-button"
+                type="button"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+                aria-controls="main-menu"
+            >
+                ☰
+            </button>
 
-  <!-- Latest Blog (card list similar in spirit to Grace’s “Blog Articles”) -->
-  <section class="container g-section">
-    <div class="g-section-head">
-      <h2>Latest Articles</h2>
-      <a class="g-link" href="blog.html">See all →</a>
-    </div>
-    <div class="g-grid">
-      <article class="g-card">
-        <h3><a href="#">Hardening a Linux Host: A Practical Baseline</a></h3>
-        <p>From SSH configs to auditd rules: a pragmatic checklist you can apply in minutes.</p>
-        <div class="g-meta">Security · 6 min read</div>
-      </article>
-      <article class="g-card">
-        <h3><a href="#">From Alerts to Insights: Tuning a SIEM</a></h3>
-        <p>Cut false positives and surface what matters with correlation, enrichment, and QA.</p>
-        <div class="g-meta">SIEM · 8 min read</div>
-      </article>
-      <article class="g-card">
-        <h3><a href="#">Incident Runbooks that Actually Work</a></h3>
-        <p>Structure, triggers, and ownership that reduce MTTR when things go sideways.</p>
-        <div class="g-meta">SRE · 5 min read</div>
-      </article>
-    </div>
-  </section>
+            <ul class="nav-links" id="main-menu">
+                <li>
+                    <a class="active" href="index.html">Home</a>
+                </li>
 
-  <!-- Featured Projects -->
-  <section class="container g-section">
-    <div class="g-section-head">
-      <h2>Featured Projects</h2>
-      <a class="g-link" href="projects.html">All projects →</a>
-    </div>
-    <div class="g-grid">
-      <article class="g-card">
-        <h3>Centralized Logging Pipeline</h3>
-        <p>Deployed ingestion → parse → storage with dashboards and baseline detections.</p>
-        <div class="g-meta">ELK · Terraform</div>
-      </article>
-      <article class="g-card">
-        <h3>Vuln Scan to Remediation</h3>
-        <p>Automated scans + ticketing with SLAs and weekly risk burndown.</p>
-        <div class="g-meta">Nessus · Jira</div>
-      </article>
-      <article class="g-card">
-        <h3>Secure Cloud Foundations</h3>
-        <p>Guardrails for identity, networking, and secrets with policy-as-code.</p>
-        <div class="g-meta">Azure · OPA</div>
-      </article>
-    </div>
-  </section>
+                <li>
+                    <a href="health-data-ai.html">Health Data & AI</a>
+                </li>
 
-  <!-- Footer -->
-  <footer class="g-footer">
-    <div class="container g-foot-inner">
-      <p>© <span id="year"></span> Nkemakolam Egbo</p>
-      <p><a class="g-link" href="contact.html">Get in touch</a></p>
-    </div>
-  </footer>
+                <li>
+                    <a href="cybersecurity-network.html">
+                        Cybersecurity
+                    </a>
+                </li>
 
-  <script>
-    // mobile nav
-    const t = document.querySelector('.g-toggle');
-    const m = document.getElementById('g-menu');
-    t?.addEventListener('click', () => {
-      const open = t.getAttribute('aria-expanded') === 'true';
-      t.setAttribute('aria-expanded', String(!open));
-      m.classList.toggle('open');
-    });
-    // year
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
+                <li>
+                    <a href="certifications.html">Certifications</a>
+                </li>
+
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container hero-content">
+                <p class="eyebrow">Professional Portfolio</p>
+
+                <h1>Nkemakolam Egbo</h1>
+
+                <p class="hero-title">
+                    Health Data Analyst, AI Data Analyst,
+                    Cybersecurity and Network Security Professional
+                </p>
+
+                <p class="hero-description">
+                    I use data, artificial intelligence, security tools,
+                    and technical problem-solving to improve healthcare
+                    insights, support informed decisions, protect systems,
+                    and strengthen network environments.
+                </p>
+
+                <div class="hero-actions">
+                    <a class="button primary-button" href="#career-paths">
+                        Explore My Work
+                    </a>
+
+                    <a class="button secondary-button" href="contact.html">
+                        Contact Me
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="career-section" id="career-paths">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="eyebrow">Choose a professional track</p>
+
+                    <h2>Explore My Portfolio</h2>
+
+                    <p>
+                        Select the area most relevant to your organization,
+                        role, or project.
+                    </p>
+                </div>
+
+                <div class="career-grid">
+                    <article class="career-card">
+                        <div class="card-icon" aria-hidden="true">
+                            📊
+                        </div>
+
+                        <p class="card-label">Data and Artificial Intelligence</p>
+
+                        <h3>Health Data Analyst / AI Data Analyst</h3>
+
+                        <p>
+                            Explore projects involving healthcare datasets,
+                            SQL, Python, data cleaning, exploratory analysis,
+                            visualization, machine learning, and
+                            evidence-based insights.
+                        </p>
+
+                        <div class="tag-list" aria-label="Data analytics skills">
+                            <span>Python</span>
+                            <span>SQL</span>
+                            <span>Jupyter</span>
+                            <span>Power BI</span>
+                            <span>Machine Learning</span>
+                            <span>Healthcare Data</span>
+                        </div>
+
+                        <a
+                            class="button card-button"
+                            href="health-data-ai.html"
+                        >
+                            View Health Data & AI Portfolio
+                        </a>
+                    </article>
+
+                    <article class="career-card">
+                        <div class="card-icon" aria-hidden="true">
+                            🛡️
+                        </div>
+
+                        <p class="card-label">Security and Infrastructure</p>
+
+                        <h3>Cybersecurity / Network Security</h3>
+
+                        <p>
+                            Explore projects involving network defense,
+                            Linux security, threat detection, vulnerability
+                            management, SIEM, incident response, monitoring,
+                            and security automation.
+                        </p>
+
+                        <div
+                            class="tag-list"
+                            aria-label="Cybersecurity skills"
+                        >
+                            <span>Network Security</span>
+                            <span>Linux</span>
+                            <span>SIEM</span>
+                            <span>Incident Response</span>
+                            <span>Python</span>
+                            <span>Security Monitoring</span>
+                        </div>
+
+                        <a
+                            class="button card-button"
+                            href="cybersecurity-network.html"
+                        >
+                            View Cybersecurity Portfolio
+                        </a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="value-section">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="eyebrow">What I bring</p>
+
+                    <h2>Data-Driven and Security-Focused Solutions</h2>
+                </div>
+
+                <div class="value-grid">
+                    <article class="value-card">
+                        <h3>Analytical Thinking</h3>
+
+                        <p>
+                            I transform complex datasets into clear findings,
+                            visualizations, and actionable recommendations.
+                        </p>
+                    </article>
+
+                    <article class="value-card">
+                        <h3>Technical Problem-Solving</h3>
+
+                        <p>
+                            I use Python, SQL, automation, and security tools
+                            to solve practical technical challenges.
+                        </p>
+                    </article>
+
+                    <article class="value-card">
+                        <h3>Risk Awareness</h3>
+
+                        <p>
+                            I consider privacy, system reliability,
+                            data integrity, security controls, and operational
+                            risk throughout my work.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <div class="container cta-content">
+                <div>
+                    <p class="eyebrow">Let us connect</p>
+
+                    <h2>Interested in my experience or projects?</h2>
+
+                    <p>
+                        Visit either portfolio track or contact me to discuss
+                        opportunities in health analytics, artificial
+                        intelligence, cybersecurity, or network security.
+                    </p>
+                </div>
+
+                <a class="button primary-button" href="contact.html">
+                    Contact Me
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-content">
+            <p>
+                © <span id="current-year"></span> Nkemakolam Egbo.
+                All rights reserved.
+            </p>
+
+            <div class="footer-links">
+                <a
+                    href="https://github.com/segbo"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    GitHub
+                </a>
+
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const menuButton = document.querySelector(".menu-button");
+        const navigation = document.querySelector(".nav-links");
+        const currentYear = document.querySelector("#current-year");
+
+        currentYear.textContent = new Date().getFullYear();
+
+        menuButton.addEventListener("click", () => {
+            const isOpen = menuButton.getAttribute("aria-expanded") === "true";
+
+            menuButton.setAttribute("aria-expanded", String(!isOpen));
+            navigation.classList.toggle("open");
+        });
+    </script>
 </body>
 </html>
